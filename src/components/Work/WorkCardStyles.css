@@ -1,0 +1,81 @@
+.project-heading {
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+}
+
+.project-container {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 5rem;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 1.5rem;
+  height: 100%;
+  /* From https://css.glass */
+  background: rgba(17, 17, 17, 0.8);
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(17, 17, 17, 0.8);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.project-title {
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.pro-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.pro-details p {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  flex-grow: 1;
+}
+.pro-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.pro-btns .btn {
+  padding: 0.5rem 1 rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+@media screen and (max-width: 1200px) {
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 740px) {
+  .project-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+  .pro-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,100 @@
+.about {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.about-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 0 4rem 15rem;
+  justify-content: center;
+  align-items: center;
+}
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+  width: 60%;
+  text-align: center;
+  padding: 1rem 1.25rem; /* From https://css.glass */
+  background: rgba(17, 17, 17, 0.8);
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(17, 17, 17, 0.8);
+}
+.about-icon {
+  font-size: 1.5rem;
+  color: #61dafb;
+}
+.about-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.about-subtitle {
+  font-weight: 200;
+}
+.about-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: ce;
+  margin: 0 350px;
+
+  max-width: 350px;
+}
+.about-left h1 {
+  padding-bottom: 1rem;
+}
+.about-left a {
+  padding-top: 1rem;
+}
+.about .right {
+  max-width: 700px;
+}
+
+.about .right .img-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.right .image {
+  max-width: 100%;
+  border: 1px solid #333;
+}
+
+.right .top {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  padding-top: 20%;
+  z-index: 6;
+}
+.right .bottom {
+  grid-column: 4 / -1;
+  grid-row: 1;
+  z-index: 5;
+}
+
+@media screen and (max-width: 750px) {
+  .about-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 4rem 0;
+    gap: 1rem;
+  }
+}
